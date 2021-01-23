@@ -1,6 +1,6 @@
 package kr.co.board.vo;
 
-public class Board_ServiceVo {
+public class Board_Vo {
 	
 	private int id;
 	private String name, title, content, pwd, writeday;

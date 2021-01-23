@@ -3,15 +3,15 @@
 <!DOCTYPE mapper
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="kr.co.board.mapper.Board_ServiceMapper">
+<mapper namespace="kr.co.board.mapper.Board_Mapper">
 
-	<insert id="write_ok" parameterType="kr.co.board.vo.Board_ServiceVO">
+	<insert id="write_ok" parameterType="kr.co.board.vo.Board_Vo">
 		insert into board(title, content,name,pwd, writeday)
 		values (#{title}, #{content}, #{name}, #{pwd},now())
 	</insert>
 	
-	<select id="list" resultType="kr.co.board.vo.Board_ServiceVO">
-	   select * from board order by id desc
+	<select id="list" resultType="kr.co.board.vo.Board_Vo">
+		select * from board order by id desc
 	</select>
 
 
